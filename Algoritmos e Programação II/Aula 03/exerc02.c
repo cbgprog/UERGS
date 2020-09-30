@@ -3,7 +3,7 @@
  * Data:        2020-09-30
  * Disciplina:  Algoritmos e Programação II - Aula 03
  * Descrição:   Implemente uma função recursiva para
-                computar o valor de 2^n.
+ *              computar o valor de 2^n.
  * Autor:       Claiton B. Garcia <cbgprog@gmail.com>
  * 
  */
