@@ -3,7 +3,7 @@
  * Data:        2020-09-30
  * Disciplina:  Algoritmos e Programação II - Aula 03
  * Descrição:   Primeiro exercício da Aula 03. Crie uma função recursiva
-                que calcula a potência de um número.
+ *              que calcula a potência de um número.
  * Autor:       Claiton B. Garcia <cbgprog@gmail.com>
  * 
  */
