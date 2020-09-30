@@ -1,5 +1,5 @@
 /*
- * Arquivo:     exerc01.c
+ * Arquivo:     exerc02.c
  * Data:        2020-09-30
  * Disciplina:  Algoritmos e Programação II - Aula 03
  * Descrição:   Implemente uma função recursiva para
