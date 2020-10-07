@@ -8,10 +8,13 @@
  */
 
 #include <stdio.h>
+#include <locale.h>
 
 #define numElementos 4
 
 int main () {
+    
+    setlocale(LC_ALL, "Portuguese");
     
     int vetorX[numElementos], vetorY[numElementos], x, produtoEscalar = 0;
     
