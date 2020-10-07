@@ -8,8 +8,11 @@
  */
 
 #include <stdio.h>
+#include <locale.h>
 
 int main () {
+    
+    setlocale(LC_ALL, "Portuguese");
     
     int gabarito[6], aposta[10], x, y, acertos = 0;
     char *resposta[3] = {"quadra", "quina", "sena"};
