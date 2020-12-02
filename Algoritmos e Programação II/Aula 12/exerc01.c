@@ -16,14 +16,23 @@
 #include <stdio.h>
 #include <locale.h>
 
+
+
 // Definimos um tipo struct chamado pessoas
 // contendo nome, altura e data de nascimento:
 
 typedef struct {
-    char nome[15];
+    char nome[21];
     float altura;
     int dia, mes, ano;
 } pessoas;
+
+void limparBuffer () {
+    int letra;
+    do {
+        letra = fgetc(stdin);
+    } while (letra != EOF && letra != '\n');
+}
 
 int main () {
     
@@ -39,7 +48,8 @@ int main () {
     
     for (x = 0; x < numeroDeUsuarios; x++) {
         printf("Nome do %i° usuário: ", x + 1);
-        scanf("%s", usuarios[x].nome);
+        scanf("%20[^\n]s", usuarios[x].nome);
+        limparBuffer();
         printf("Altura: ");
         scanf("%f", &usuarios[x].altura);
         printf("Data de Nascimento:\n");
@@ -49,14 +59,15 @@ int main () {
         scanf("%i", &usuarios[x].mes);
         printf("Ano: ");
         scanf("%i", &usuarios[x].ano);
+        limparBuffer();
     }
     
     // Exibir na tela usuários com mais de 1.78 de altura:
-    printf("\n%-16s | %6s | %s\n----------------------------------------------\n",
+    printf("\n%-21s | %6s | %s\n---------------------------------------------------\n",
             "Nome", "Altura", "Data de Nascimento");
     for (x = 0; x < numeroDeUsuarios; x++) {
         if (usuarios[x].altura > 1.78) {
-            printf("%-16s | %6.2f | %i/%i/%i\n",
+            printf("%-21s | %6.2f | %02i/%02i/%4i\n",
                     usuarios[x].nome,
                     usuarios[x].altura,
                     usuarios[x].dia,
