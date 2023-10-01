@@ -18,7 +18,7 @@ int main () {
     
     int vetorX[numElementos], vetorY[numElementos], x, produtoEscalar = 0;
     
-    printf("Produto escalar de dois vetores.\n");
+    printf("Produto escalar de dois vetores:\n\n");
 
     for (x = 0; x < numElementos; x++) {
         printf("Digite o %iº valor do vetor X: ", x + 1);
