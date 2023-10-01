@@ -34,7 +34,7 @@ int main () {
     
     for (x = 0; x < 10; x++) {
         for (y = 0; y < 6; y++) {
-            aposta[x] == gabarito[y] ? acertos++ : NULL;
+            aposta[x] == gabarito[y] ? acertos++ : 0;
         }
     }
     

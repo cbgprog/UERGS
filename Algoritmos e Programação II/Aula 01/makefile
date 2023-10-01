@@ -1,6 +1,6 @@
 CC=gcc
 exec=prog
-font=exerc01.c
+font=exerc02.c
 
 default:
 	$(CC) -o $(exec) $(font)
